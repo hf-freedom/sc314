@@ -1,0 +1,20 @@
+server:
+  port: 8003
+
+spring:
+  application:
+    name: contract-warning-system
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+contract:
+  high-amount-threshold: 1000000
+  warn-days:
+    level1: 90
+    level2: 30
+    level3: 7
+  cron:
+    scan: "0 0 8 * * ?"
